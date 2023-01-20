@@ -1,0 +1,56 @@
+input[type=button].primary {
+  border: 1px solid orange;
+}
+input[type=button].primary.sm {
+  width: 50px;
+}
+input[type=button].primary.md {
+  width: 100px;
+  border: 2px solid red;
+}
+input[type=button].primary.lg {
+  width: 150px;
+  border: 2px solid green;
+}
+input[type=button].primary.xl {
+  width: 200px;
+  border: 2px solid blue;
+}
+input[type=button].secondary {
+  border: 1px solid cyan;
+}
+input[type=button].secondary.sm {
+  width: 50px;
+}
+input[type=button].secondary.md {
+  width: 100px;
+  border: 2px solid red;
+}
+input[type=button].secondary.lg {
+  width: 150px;
+  border: 2px solid green;
+}
+input[type=button].secondary.xl {
+  width: 200px;
+  border: 2px solid blue;
+}
+input[type=button].ternary {
+  border: 1px solid yellow;
+}
+input[type=button].ternary.sm {
+  width: 50px;
+}
+input[type=button].ternary.md {
+  width: 100px;
+  border: 2px solid red;
+}
+input[type=button].ternary.lg {
+  width: 150px;
+  border: 2px solid green;
+}
+input[type=button].ternary.xl {
+  width: 200px;
+  border: 2px solid blue;
+}
+
+/*# sourceMappingURL=tre-input-button.css.map */

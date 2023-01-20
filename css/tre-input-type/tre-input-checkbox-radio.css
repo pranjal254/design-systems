@@ -1,0 +1,81 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css);
+/*//neutral colors*/
+input[type=radio], input[type=checkbox] {
+  display: none;
+}
+input[type=radio]:disabled + span, input[type=checkbox]:disabled + span {
+  cursor: not-allowed;
+}
+
+input[type=checkbox] + span::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: #fff;
+  border: 1.5px solid #fe5000;
+  border-radius: 2px;
+}
+
+input[type=checkbox]:disabled + span::before,
+input[type=radio]:disabled + span::before {
+  opacity: 0.3;
+}
+
+input[type=checkbox]:not([disabled]):not(:checked) + span:hover::before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  text-align: center;
+  line-height: 14px;
+  color: #fe5000;
+}
+
+input[type=checkbox]:checked + span:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  text-align: center;
+  line-height: 14px;
+  border: 1px solid #fe5000;
+  color: #fff;
+  background-color: #fe5000;
+}
+
+input[type=radio] + span:before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fe5000;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+input[type=radio]:not([disabled]):not(:checked) + span:hover::before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  font-size: 8px;
+  text-align: center;
+  line-height: 15px;
+  background-color: #fff;
+  color: #fe5000;
+}
+
+input[type=radio]:checked + span::before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  font-size: 8px;
+  text-align: center;
+  line-height: 15px;
+  border: 1px solid #fe5000;
+  color: #fff;
+  background-color: #fe5000;
+}
+
+/*# sourceMappingURL=tre-input-checkbox-radio.css.map */

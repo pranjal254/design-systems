@@ -1,0 +1,90 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css);
+@import '../settings.scss';
+
+// Checkboxes and radiobuttons
+// to customize them it must look like the example below:
+// <label>
+// 	<input type="checkbox/radio">
+// 	<span>Lable</span>
+// </label>
+// f06e
+
+
+
+input[type=radio], input[type=checkbox] {
+	display:none;
+	&:disabled + span{
+		cursor: not-allowed;
+	}
+}
+input[type=checkbox] + span::before {
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	background-color: #fff;
+	border: 1.5px solid $primary-color;
+	border-radius: 2px;
+}
+input[type=checkbox]:disabled + span::before,
+input[type=radio]:disabled + span::before {
+  opacity: 0.3;
+}
+
+input[type=checkbox]:not([disabled]):not(:checked) + span:hover::before{
+  // content:"\e013";
+  // font-family: "Glyphicons Halflings";
+  content: "\f00c";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  text-align:center;
+  line-height:14px;
+  color: $primary-color;
+}
+input[type=checkbox]:checked + span:before {
+	// content:"\e013";
+	// font-family: "Glyphicons Halflings";
+	content: "\f00c";
+	font-family: "FontAwesome";
+	font-size: 13px;
+	text-align:center;
+	line-height:14px;
+	border: 1px solid $primary-color;
+	color: #fff;
+	background-color: $primary-color;
+}
+input[type=radio] + span:before {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+	content: "";
+	width: 16px;
+	height: 16px;
+	border: 1px solid $primary-color;
+	border-radius: 8px;
+	background-color: #fff;
+}
+input[type=radio]:not([disabled]):not(:checked) + span:hover::before{
+	// content:"\e013";
+	// font-family: "Glyphicons Halflings";
+	content: "\f111";
+	font-family: "FontAwesome";
+	font-size: 8px;
+	text-align: center;
+	line-height: 15px;
+	background-color: #fff;
+	color: $primary-color;
+}
+input[type=radio]:checked + span::before {
+	content: "\f111";
+	font-family: "FontAwesome";
+	font-size: 8px;
+	text-align: center;
+	line-height: 15px;
+	border: 1px solid $primary-color;
+	color: #fff;
+	background-color: $primary-color;
+}

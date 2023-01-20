@@ -1,0 +1,56 @@
+/*//neutral colors*/
+input[type=text] {
+  border: 1.5px solid #fe5000;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+input[type=text]::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+input[type=text].sm {
+  padding: 6px 16px;
+}
+input[type=text].sm::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+input[type=text].md {
+  padding: 7px 16px;
+}
+input[type=text].md::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+.error-message {
+  display: none;
+  color: #f44336;
+}
+.error-message.show {
+  display: block;
+}
+
+input:invalid + .error-message.show {
+  display: block;
+}
+
+/*# sourceMappingURL=tre-input-type-text.css.map */

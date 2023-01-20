@@ -1,0 +1,1 @@
+export { default as LandingPageSSO } from "./LangingPageSSO";

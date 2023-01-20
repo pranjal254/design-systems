@@ -1,0 +1,72 @@
+input[type=radio] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=radio]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+}
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+input[type=radio].primary {
+  border: 1px solid orange;
+}
+input[type=radio].primary.sm {
+  border: 2px solid red;
+}
+input[type=radio].primary.md {
+  border: 2px solid red;
+}
+input[type=radio].primary.lg {
+  border: 2px solid green;
+}
+input[type=radio].primary.xl {
+  border: 2px solid blue;
+}
+input[type=radio].secondary {
+  border: 1px solid cyan;
+}
+input[type=radio].secondary.sm {
+  border: 2px solid red;
+}
+input[type=radio].secondary.md {
+  border: 2px solid red;
+}
+input[type=radio].secondary.lg {
+  border: 2px solid green;
+}
+input[type=radio].secondary.xl {
+  border: 2px solid blue;
+}
+input[type=radio].ternary {
+  border: 1px solid yellow;
+}
+input[type=radio].ternary.sm {
+  border: 2px solid red;
+}
+input[type=radio].ternary.md {
+  border: 2px solid red;
+}
+input[type=radio].ternary.lg {
+  border: 2px solid green;
+}
+input[type=radio].ternary.xl {
+  border: 2px solid blue;
+}
+
+/*# sourceMappingURL=tre-input-type-radio.css.map */

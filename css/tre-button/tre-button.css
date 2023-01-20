@@ -1,0 +1,83 @@
+/*//neutral colors*/
+.tre-btn {
+  padding: 10px 20px;
+  border-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+.tre-btn.primary {
+  background-color: #fe5000;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.tre-btn.primary:hover {
+  border: 1px solid #fe5000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.tre-btn.secondary {
+  background-color: #6DCDB8;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.tre-btn.secondary:hover {
+  border: 1px solid #6DCDB8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.tre-btn.cta {
+  background-color: #fe5000;
+  color: #ffffff;
+  border-radius: 2px;
+}
+.tre-btn.cta:hover {
+  border: 1px solid #fe5000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.tre-btn.disabled {
+  background-color: #E6E7E8;
+  color: #929497;
+  border-radius: 4px;
+}
+.tre-btn.outline-primary {
+  background-color: #ffffff;
+  color: #fe5000;
+  border: 1px solid #fe5000;
+  border-radius: 4px;
+}
+.tre-btn.outline-primary:hover {
+  background-color: #fe5000;
+  color: #ffffff;
+}
+.tre-btn.outline-secondary {
+  background-color: #ffffff;
+  color: #6DCDB8;
+  border: 1px solid #6DCDB8;
+  border-radius: 4px;
+}
+.tre-btn.outline-secondary:hover {
+  background-color: #6DCDB8;
+  color: #ffffff;
+}
+.tre-btn.outline-disabled {
+  background-color: #ffffff;
+  color: #E6E7E8;
+  border: 1px solid #E6E7E8;
+  border-radius: 4px;
+}
+.tre-btn.outline-disabled:hover {
+  background-color: #E6E7E8;
+  color: #ffffff;
+}
+.tre-btn.sm {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.tre-btn.md {
+  font-size: 18px;
+  padding: 8px 16px;
+}
+.tre-btn.lg {
+  font-size: 20px;
+  padding: 12px 24px;
+}
+
+/*# sourceMappingURL=tre-button.css.map */

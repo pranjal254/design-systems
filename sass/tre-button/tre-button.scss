@@ -1,0 +1,97 @@
+@import '../settings.scss';
+.tre-btn {
+    padding: 10px 20px;
+    border-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+  
+    &.primary {
+      background-color: $primary-color;
+      color: $white;
+      border-radius: 4px;
+
+      &:hover {
+        border: 1px solid $primary-color;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+
+      }
+    }
+  
+    &.secondary {
+      background-color: $secondary-color;
+      color: $white;
+      border-radius: 4px;
+
+      &:hover {
+        border: 1px solid $secondary-color;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+
+
+      }
+    }
+    
+    &.cta {
+      background-color: $primary-color;
+      color: $white;
+      border-radius: 2px;
+
+      &:hover {
+        border: 1px solid $primary-color;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+
+      }
+    }
+
+    &.disabled {
+      background-color: $disabled-button;
+      color: $disabled-button-text-color;
+      border-radius: 4px;
+    }
+
+    &.outline-primary {
+      background-color: $white;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      border-radius: 4px;
+      &:hover {
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
+    &.outline-secondary {
+      background-color: $white;
+      color: $secondary-color;
+      border: 1px solid $secondary-color;
+      border-radius: 4px;
+      &:hover {
+        background-color: $secondary-color;
+        color: $white;
+      }
+    }
+    &.outline-disabled {
+      background-color: $white;
+      color: $disabled-button;
+      border: 1px solid $disabled-button;
+      border-radius: 4px;
+      &:hover {
+        background-color: $disabled-button;
+        color: $white;
+      }
+    }
+  
+    &.sm {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  
+    &.md {
+      font-size: 18px;
+      padding: 8px 16px;
+    }
+  
+    &.lg {
+      font-size: 20px;
+      padding: 12px 24px;
+    }
+
+  }

@@ -5,6 +5,8 @@ import dts from "rollup-plugin-dts";
 
 import packageJson from "./package.json" assert { type: "json" };
 
+import sass from 'rollup-plugin-sass';
+
 export default [
     {
       input: "src/index.ts",
@@ -24,11 +26,17 @@ export default [
         resolve(),
         commonjs(),
         typescript({ tsconfig: "./tsconfig.json" }),
+        sass({
+          output: packageJson.css, // this will create a css file
+        }),
+        
       ],
+      external: ['react-dom'],
     },
     {
       input: "dist/esm/types/index.d.ts",
       output: [{ file: "dist/index.d.ts", format: "esm" }],
       plugins: [dts()],
+      external: /\.(css|scss)$/
     },
   ];

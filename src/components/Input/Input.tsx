@@ -1,6 +1,6 @@
 import React from "react";
-import '../../../css/tre-button/tre-button.css'
-interface ButtonProps {
+import '../../../css/tre-input-type/tre-input-type-text.css'
+interface InputProps {
   label: string;
   variant: 'primary' | 'secondary' | 'disabled' | 'cta' | 'outline-primary' | 'outline-secondary' | 'outline-disabled';
   size: 'sm' | 'md' | 'lg';
