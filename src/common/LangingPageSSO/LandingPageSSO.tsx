@@ -1,5 +1,5 @@
 import React from "react";
-import ssologinImg from "../../assets/images/SSOLogin.svg";
+//import ssologinImg from "../../assets/images/SSOLogin.svg";
 // import microsoft from "../../assets/images/Microsoft";
 import { CardBody, Card, Container, CardFooter, CardTitle } from "reactstrap";
 
@@ -56,7 +56,7 @@ const LandingPageSSO = (props: LandingPageSSOProps) => {
             © Copyright Tredence 2022
           </CardFooter>
         </Card>
-        <img
+        {/* <img
           src={ssologinImg}
           alt=""
           className="img-fluid"
@@ -67,7 +67,7 @@ const LandingPageSSO = (props: LandingPageSSOProps) => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-        />
+        /> */}
       </Container>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../css/tre-button/tre-button.css'
+import '../../../sass/tre-button/tre-button.scss'
 interface ButtonProps {
   label: string;
   variant: 'primary' | 'secondary' | 'disabled' | 'cta' | 'outline-primary' | 'outline-secondary' | 'outline-disabled';
