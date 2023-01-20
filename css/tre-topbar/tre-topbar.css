@@ -14,7 +14,7 @@
 .custom-avatar {
   border: 1.5px solid #5c6173 !important;
   border-radius: 100%;
-  font-family: "Inter";
+  font-family: "Poppins";
   font-weight: 500;
   font-size: 0.8em;
   padding: 0em 0em 0em 0.4em;
@@ -29,7 +29,7 @@
   font-size: 0.7em;
   padding: 0.8%;
   font-weight: 400;
-  font-family: "Inter";
+  font-family: "Poppins";
   font-style: normal;
   color: #000000;
 }
