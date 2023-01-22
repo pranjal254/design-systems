@@ -1,6 +1,6 @@
 import React from "react";
-import "../../../css/tre-button/tre-button.css";
-import "../../../css/tre-topbar/tre-topbar.css";
+import "../../../sass/tre-button/tre-button.scss";
+import "../../../sass/tre-topbar/tre-topbar.scss";
 import notificationImg from "../../assets/images/NotificationBell.svg";
 
 interface TreTopbarProps {
