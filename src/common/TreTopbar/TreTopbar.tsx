@@ -15,7 +15,7 @@ const TreTopbar = (props: TreTopbarProps) => {
 
   return (
     <div className="tre-topbar">
-      <div id={"avtar-name"} className="custom-avatar">
+      <div id={"avtar-name"} className="custom-avatar" style={{paddingRight:"20px"}}>
         <span>{avtarText}</span>
       </div>
       <div className="user-name">{props.userName}</div>

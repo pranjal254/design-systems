@@ -7,7 +7,7 @@ import packageJson from "./package.json" assert { type: "json" };
 
 import sass from 'rollup-plugin-sass';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import img from 'rollup-plugin-image-files';
+import image from '@rollup/plugin-image';
 
 export default [
     {
@@ -32,7 +32,7 @@ export default [
         sass({
           insert: true
         }),
-        img()
+        image()
         
       ],
       external: ['react-dom'],
@@ -41,6 +41,6 @@ export default [
       input: "dist/esm/types/index.d.ts",
       output: [{ file: "dist/index.d.ts", format: "esm" }],
       plugins: [dts()],
-      external: [/\.(css|less|scss)$/]
+      external: [/\.(css|less|scss|svg|png|jpg|jpeg)$/]
     },
   ];
