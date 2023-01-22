@@ -6,6 +6,7 @@ import dts from "rollup-plugin-dts";
 import packageJson from "./package.json" assert { type: "json" };
 
 import sass from 'rollup-plugin-sass';
+import img from 'rollup-plugin-image-files';
 
 export default [
     {
@@ -29,6 +30,7 @@ export default [
         sass({
           output: packageJson.css, // this will create a css file
         }),
+        img()
         
       ],
       external: ['react-dom'],

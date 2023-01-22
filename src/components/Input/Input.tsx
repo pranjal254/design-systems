@@ -1,6 +1,6 @@
 import React from "react";
-import "../../../css/tre-input-type/tre-input-type-text.css";
-import "../../../css/tre-input-type/tre-input-checkbox-radio.css";
+import "../../../sass/tre-input-type/tre-input-type-text.scss";
+import "../../../sass/tre-input-type/tre-input-checkbox-radio.scss";
 interface InputProps {
   placeholder: string;
   type: "text" | "textarea" | "number" | "select" | "checkbox" | "radio";
