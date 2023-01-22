@@ -6,6 +6,7 @@ import dts from "rollup-plugin-dts";
 import packageJson from "./package.json" assert { type: "json" };
 
 import sass from 'rollup-plugin-sass';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import img from 'rollup-plugin-image-files';
 
 export default [
@@ -27,8 +28,9 @@ export default [
         resolve(),
         commonjs(),
         typescript({ tsconfig: "./tsconfig.json" }),
+        peerDepsExternal(),
         sass({
-          output: packageJson.css, // this will create a css file
+          insert: true
         }),
         img()
         
@@ -39,6 +41,6 @@ export default [
       input: "dist/esm/types/index.d.ts",
       output: [{ file: "dist/index.d.ts", format: "esm" }],
       plugins: [dts()],
-      external: /\.(css|scss)$/
+      external: [/\.(css|less|scss)$/]
     },
   ];
