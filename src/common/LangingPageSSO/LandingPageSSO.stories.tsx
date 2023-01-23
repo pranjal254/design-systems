@@ -1,6 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import LandingPageSSO from "./LandingPageSSO";
+import ssologinImg from "../../assets/images/SSOLogin.png";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -17,4 +18,7 @@ export const LoginPageSSO = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 LoginPageSSO.args = {
   projectName: "Atom.Ai",
+  imageSrc: ssologinImg,
+  imageAlt: 'login background'
+
 };

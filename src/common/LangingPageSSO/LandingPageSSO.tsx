@@ -6,17 +6,20 @@ import { CardBody, Card, Container, CardFooter, CardTitle } from "reactstrap";
 interface LandingPageSSOProps {
   projectName: string;
   handleRedirect: () => void;
-
+  imageSrc: any;
+  imageAlt: string;
 }
 
 const LandingPageSSO = (props: LandingPageSSOProps) => {
   return (
     <div
+      role="img"
+      aria-label={props.imageAlt}
       style={{
-        backgroundImage: `url(${ssologinImg})`,      
+        backgroundImage: `url(${props.imageSrc})`,
         height: "100vh",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
       }}
     >
