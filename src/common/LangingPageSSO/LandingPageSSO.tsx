@@ -1,11 +1,12 @@
 import React from "react";
-import ssologinImg from "../../assets/images/SSOLogin1.svg";
+import ssologinImg from "../../assets/images/SSOLogin.png";
 import microsoft from "../../assets/images/Microsoft.png";
 import { CardBody, Card, Container, CardFooter, CardTitle } from "reactstrap";
 
 interface LandingPageSSOProps {
   projectName: string;
   handleRedirect: () => void;
+
 }
 
 const LandingPageSSO = (props: LandingPageSSOProps) => {
