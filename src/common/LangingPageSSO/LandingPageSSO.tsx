@@ -1,5 +1,5 @@
 import React from "react";
-import ssologinImg from "../../assets/images/SSOLogin.svg";
+import ssologinImg from "../../assets/images/SSOLogin1.svg";
 import microsoft from "../../assets/images/Microsoft.png";
 import { CardBody, Card, Container, CardFooter, CardTitle } from "reactstrap";
 
@@ -10,7 +10,7 @@ interface LandingPageSSOProps {
 
 const LandingPageSSO = (props: LandingPageSSOProps) => {
   return (
-    <div style={{ backgroundColor: "#FFFFFF", marginLeft: "-12px" }}>
+    <div style={{ backgroundColor: "#FFFFFF", marginLeft: "-8px" }}>
       <Container fluid>
         <Card
           style={{
