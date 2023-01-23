@@ -10,11 +10,9 @@ interface LandingPageSSOProps {
 
 const LandingPageSSO = (props: LandingPageSSOProps) => {
   return (
-    <Container
-      fluid
+    <div
       style={{
-        backgroundImage: `url(${ssologinImg})`,
-        padding: "0",
+        backgroundImage: `url(${ssologinImg})`,      
         height: "100vh",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -25,7 +23,7 @@ const LandingPageSSO = (props: LandingPageSSOProps) => {
         style={{
           float: "left",
           position: "absolute",
-          left: "54vw",
+          left: "55vw",
           top: "35vh",
           zIndex: "1000",
           padding: "5px",
@@ -90,7 +88,7 @@ const LandingPageSSO = (props: LandingPageSSOProps) => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }} */}
-    </Container>
+    </div>
   );
 };
 
