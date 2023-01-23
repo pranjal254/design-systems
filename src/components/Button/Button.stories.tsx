@@ -1,5 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import {action} from ""
 import Button from "./Button";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -15,7 +16,7 @@ export const VariantButton = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 VariantButton.args = {
   label: "Button!",
-  variant: "primary"
+  variant: "primary",
 };
 
 export const SizeButton = Template.bind({});
