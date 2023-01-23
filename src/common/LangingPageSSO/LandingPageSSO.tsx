@@ -10,8 +10,8 @@ interface LandingPageSSOProps {
 
 const LandingPageSSO = (props: LandingPageSSOProps) => {
   return (
-    <div style={{ backgroundColor: "#FFFFFF", marginLeft: "-8px" }}>
-      <Container fluid>
+ 
+      <Container fluid style={{ backgroundColor: "#FFFFFF", backgroundImage:`url(${ssologinImg})`, minHeight:'100vh', padding:'0' }}>
         <Card
           style={{
             float: "left",
@@ -63,7 +63,7 @@ const LandingPageSSO = (props: LandingPageSSOProps) => {
             © Copyright Tredence 2022
           </CardFooter>
         </Card>
-        <img
+        {/* <img
           src={ssologinImg}
           alt=""
           className="img-fluid"
@@ -73,10 +73,10 @@ const LandingPageSSO = (props: LandingPageSSOProps) => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-          }}
-        />
+          }} */}
+       
       </Container>
-    </div>
+   
   );
 };
 
