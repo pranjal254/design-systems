@@ -21,7 +21,7 @@ interface SelectProps {
   style?: React.CSSProperties;
   placeholder?: string;
   options: readonly ValueOption[];
-  onChange: () => void;
+  onChange: (e:any) => void;
   value: SelectValues[];
 }
 
@@ -78,6 +78,7 @@ const TreSelect = (props: SelectProps) => {
       isMulti={props.isMulti || false}
       options={props.options}
       placeholder={props.placeholder ? <div>{props.placeholder}</div> : <div>Select...</div>}
+      onChange={props.onChange}
     />
   );
 };
