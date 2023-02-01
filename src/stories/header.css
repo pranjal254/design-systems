@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: red;
+  color: white;
 }
 
 svg {
@@ -26,7 +28,11 @@ button + button {
 }
 
 .welcome {
-  color: #333;
   font-size: 14px;
   margin-right: 10px;
+}
+.logs{
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
 }

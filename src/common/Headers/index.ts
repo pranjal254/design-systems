@@ -1,0 +1,1 @@
+export {default as HeaderType1} from "./HeaderType1"

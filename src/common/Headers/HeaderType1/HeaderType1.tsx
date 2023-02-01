@@ -1,7 +1,5 @@
-import React from 'react';
-
-import Button from '../components/Button';
-import './header.css';
+import React from "react";
+import "./headertype1.scss";
 
 type User = {
   name: string;
@@ -14,9 +12,14 @@ interface HeaderProps {
   onCreateAccount: () => void;
 }
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
+const HeaderType1 = ({
+  user,
+  onLogin,
+  onLogout,
+  onCreateAccount,
+}: HeaderProps) => (
   <header>
-    <div className="wrapper">
+    <div className="treWrapper">
       <div>
         <h1>Customer Explorer</h1>
       </div>
@@ -26,12 +29,16 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <span className='logs' onClick={onLogout}>Log out</span>
+            <span className="logs" onClick={onLogout}>
+              Log out
+            </span>
             {/* <Button variant='primary' size="sm" onClick={onLogout} label="Log out" /> */}
           </>
         ) : (
           <>
-          <span className='logs' onClick={onCreateAccount}>Log In</span>
+            <span className="logs" onClick={onCreateAccount}>
+              Log In
+            </span>
             {/* <Button variant='primary' size="sm" onClick={onCreateAccount} label="Sign up" /> */}
           </>
         )}
@@ -39,3 +46,4 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
     </div>
   </header>
 );
+export default HeaderType1;
