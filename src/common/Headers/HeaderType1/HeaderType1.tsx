@@ -10,6 +10,7 @@ interface HeaderProps {
   onLogin: () => void;
   onLogout: () => void;
   onCreateAccount: () => void;
+  projectName: string;
 }
 
 const HeaderType1 = ({
@@ -17,11 +18,12 @@ const HeaderType1 = ({
   onLogin,
   onLogout,
   onCreateAccount,
+  projectName
 }: HeaderProps) => (
   <header>
     <div className="treWrapper">
       <div>
-        <h1>Customer Explorer</h1>
+        <h1>{projectName}</h1>
       </div>
       <div>
         {user ? (

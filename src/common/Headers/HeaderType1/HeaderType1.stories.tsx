@@ -19,6 +19,7 @@ LoggedIn.args = {
   user: {
     name: 'Pranjal Gaikwad',
   },
+  projectName: 'Customer Explorer'
 };
 
 export const LoggedOut = Template.bind({});
