@@ -7,15 +7,17 @@ interface NavItem {
   path: string;
   icon: React.FC<{ size?: string | number }>;
   onClick: () => void;
+  
 }
 
 interface SidebarProps {
   navItems: NavItem[];
+  height: string;
 }
 
-const SidebarType1: React.FC<SidebarProps> = ({ navItems }) => {
+const SidebarType1: React.FC<SidebarProps> = ({ navItems, height }) => {
   return (
-    <div className="sidebarWrapper">
+    <div className="sidebarWrapper" style={{height: height}}>
       {navItems.map((navItem) => (
         <li key={navItem.title} className="listWrapper">
           <navItem.icon size={30} />

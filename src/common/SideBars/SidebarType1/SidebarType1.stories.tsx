@@ -16,24 +16,25 @@ const Template: ComponentStory<typeof SidebarType1> = (args) => (
   <SidebarType1 {...args} />
 );
 const navItems = [
-    {
-      title: 'Home',
-      path: '#',
-      icon: FaHome,
-    },
-    {
-      title: 'Profile',
-      path: '#',
-      icon: FaUser,
-    },
-    {
-      title: 'Settings',
-      path: '#',
-      icon: FaCog,
-    },
-  ];
+  {
+    title: "Home",
+    path: "#",
+    icon: FaHome,
+  },
+  {
+    title: "Profile",
+    path: "#",
+    icon: FaUser,
+  },
+  {
+    title: "Settings",
+    path: "#",
+    icon: FaCog,
+  },
+];
 
 export const Sidebar = Template.bind({});
 Sidebar.args = {
-    navItems: navItems
+  navItems: navItems,
+  height:'97vh'
 };

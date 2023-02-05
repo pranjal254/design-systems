@@ -1,6 +1,6 @@
 {
   "name": "@pranjal254/design-systems",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Tredence Design System Library",
   "scripts": {
     "rollup": "rollup -c",

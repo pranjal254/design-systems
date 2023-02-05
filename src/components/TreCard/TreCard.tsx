@@ -6,8 +6,15 @@ interface TreCardProps {
   cardTitle: string;
   cardText: string;
   backgroundColor?: string;
-  buttonSize: string;
-  buttonVariant: string;
+  buttonSize: "sm" | "md" | "lg";
+  buttonVariant:
+    | "primary"
+    | "secondary"
+    | "disabled"
+    | "cta"
+    | "outline-primary"
+    | "outline-secondary"
+    | "outline-disabled";
   buttonLabel: string;
   onClick?: () => void;
 }
@@ -22,10 +29,10 @@ const TreCard = (props: TreCardProps) => {
       <div className="cardText">{props.cardText}</div>
       <div className="cardFooter">
         <Button
-          label="Analyze"
+          label={props.buttonLabel}
           onClick={() => {}}
-          size="sm"
-          variant="primary"
+          size={props.buttonSize}
+          variant={props.buttonVariant}
         />
       </div>
     </div>

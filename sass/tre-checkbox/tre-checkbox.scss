@@ -1,0 +1,47 @@
+@import "../new-theme.scss";
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css);
+
+input[type="checkbox"] {
+  display: none;
+  &:disabled + span {
+    cursor: not-allowed;
+  }
+}
+
+input[type="checkbox"] + span::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: #fff;
+  border: 1.5px solid $primary-color;
+  border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + span:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  text-align: center;
+  line-height: 14px;
+  border: 1px solid $primary-color;
+  color: #fff;
+  background-color: $primary-color;
+}
+input[type="checkbox"]:disabled:checked + span::before {
+    background-color: $disabled-button;
+    color: #fff;
+    border: 1px solid $disabled-button;
+  }
+  input[type="checkbox"]:disabled + span::before {
+    background-color: $disabled-button;
+    color: #fff;
+    border: 1px solid $disabled-button;
+  }
+.span-class {
+  padding-top: 1px;
+  color: #333333;
+}

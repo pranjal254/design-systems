@@ -3,7 +3,7 @@ import "../../../sass/tre-input-type/tre-input-type-text.scss";
 import "../../../sass/tre-input-type/tre-input-checkbox-radio.scss";
 interface InputProps {
   placeholder: string;
-  type: "text" | "textarea" | "number" | "select" | "checkbox" | "radio";
+  type: "text" | "textarea" | "number" | "checkbox" | "radio";
   variant:
     | "primary"
     | "disabled"
@@ -17,7 +17,7 @@ const Input = (props: InputProps) => {
     {props.type == 'checkbox' || props.type == 'radio' ?
     (
         <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"/>
+        <input type={props.type} name="optionsRadios" id="optionsRadios1" value="option1"/>
         <span>{props.label}</span>
       </label>
     )
