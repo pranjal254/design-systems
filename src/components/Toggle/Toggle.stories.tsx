@@ -15,5 +15,5 @@ export const ToggleTemplate = Template.bind({});
 ToggleTemplate.args = {
   isChecked: true,
   disabled:false,
-  size:'sm'
+  size:'sm',
 };

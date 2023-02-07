@@ -1,0 +1,77 @@
+@import "../new-theme.scss";
+$parent-width-sm: 30px;
+$parent-height-sm: 30px;
+$parent-width-md: 40px;
+$parent-height-md: 40px;
+$parent-width-lg: 50px;
+$parent-height-lg: 50px;
+$border-sm: 3px;
+$border-md: 4px;
+$border-lg: 5px;
+$spinner-background: #40bba0;
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border-radius: 50%;
+  animation: spinner 0.8s linear infinite;
+  position: relative;
+  &.sm {
+    height: $parent-height-sm;
+    width: $parent-width-sm;
+    border: $border-sm solid $spinner-background;
+    &:before {
+      content: "";
+      height: $parent-height-sm - $border-sm;
+      width: $parent-width-sm - $border-sm;
+      border-radius: 50%;
+      border: $border-sm solid transparent;
+      border-top-color: $primary-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &.md {
+    height: $parent-height-md;
+    width: $parent-width-md;
+    border: $border-md solid $spinner-background;
+    &:before {
+      content: "";
+      height: $parent-height-md - $border-md;
+      width: $parent-width-md - $border-md;
+      border-radius: 50%;
+      border: $border-md solid transparent;
+      border-top-color: $primary-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &.lg {
+    height: $parent-height-lg;
+    width: $parent-width-lg;
+    border: $border-lg solid $spinner-background;
+    &:before {
+      content: "";
+      height: $parent-height-lg - $border-lg;
+      width: $parent-width-lg - $border-lg;
+      border-radius: 50%;
+      border: $border-lg solid transparent;
+      border-top-color: $primary-color;
+      position: absolute;
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -4,3 +4,4 @@ export {default as TreSelect} from "./TreSelect";
 export {default as TreCard} from "./TreCard";
 export { default as Checkbox } from "./Checkbox";
 export { default as Toggle } from "./Toggle";
+export {default as Spinner} from "./Spinner";
