@@ -1,13 +1,13 @@
 import React from "react";
-import { FaHome, FaUser, FaCog } from "react-icons/fa";
 import "./SidebarType1.scss";
 
 interface NavItem {
   title: string;
   path: string;
-  icon: React.FC<{ size?: string | number }>;
+  icon: React.FC<{}>;
+  iconSize?: string | number;
+  iconColor?: string;
   onClick: () => void;
-  
 }
 
 interface SidebarProps {
@@ -17,10 +17,10 @@ interface SidebarProps {
 
 const SidebarType1: React.FC<SidebarProps> = ({ navItems, height }) => {
   return (
-    <div className="sidebarWrapper" style={{height: height}}>
+    <div className="sidebarWrapper" style={{ height: height }}>
       {navItems.map((navItem) => (
         <li key={navItem.title} className="listWrapper">
-          <navItem.icon size={30} />
+          <navItem.icon size={navItem.iconSize} color={navItem.iconColor} />
         </li>
       ))}
     </div>

@@ -1,0 +1,1 @@
+export {default as TableType1} from "./TableType1"

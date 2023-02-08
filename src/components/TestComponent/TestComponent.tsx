@@ -2,6 +2,7 @@ import React from "react";
 import "../../../sass/tre-card/tre-card.scss";
 import { HeaderType1 } from "../../common";
 import { SidebarType1 } from "../../common";
+import { TableType1 } from "../../common";
 import { Row, Col } from "reactstrap";
 import { FaHome, FaUser, FaCog } from "react-icons/fa";
 
@@ -44,7 +45,7 @@ const TestComponent = (props: TestProps) => {
             },
           ]}
         />
-        <Row style={{ margin: "2vh 0 0 0.2vw" }}>
+        {/* <Row style={{ margin: "2vh 0 0 0.2vw" }}>
           <Col md={4}>
             <TreCard
               backgroundColor="#f0f8ff"
@@ -78,6 +79,9 @@ const TestComponent = (props: TestProps) => {
               onClick={() => {}}
             />
           </Col>
+        </Row> */}
+        <Row>
+        <TableType1/>
         </Row>
       </div>
     </>

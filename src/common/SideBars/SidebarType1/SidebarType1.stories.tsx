@@ -20,16 +20,22 @@ const navItems = [
     title: "Home",
     path: "#",
     icon: FaHome,
+    iconSize: 25,
+    iconColor: '#0000008a'
   },
   {
     title: "Profile",
     path: "#",
     icon: FaUser,
+    iconSize: 25,
+    iconColor: '#0000008a'
   },
   {
     title: "Settings",
     path: "#",
     icon: FaCog,
+    iconSize: 25,
+    iconColor: '#0000008a'
   },
 ];
 

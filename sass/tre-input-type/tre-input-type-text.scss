@@ -1,57 +1,57 @@
-@import '../settings.scss';
-input[type=text]{
-    border:1.5px solid $primary-color; 
-    border-radius: 4px;
-    padding: 8px 16px;
-    &::placeholder{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 21px;
-        display: flex;
-        align-items: center;
-        color: #333333;
-    }     
-    &.sm {
-        padding: 6px 16px;
-        &::placeholder{
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 12px;
-            line-height: 14px;
-            display: flex;
-            align-items: center;
-            color: #333333;
-        }
-      }      
-    &.md {
-        padding: 7px 16px;
-        &::placeholder{
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 18px;
-            display: flex;
-            align-items: center;
-            color: #333333;
-        }
-    }
+ @import '../settings.scss';
+// input[type=text]{
+//     border:1.5px solid $primary-color; 
+//     border-radius: 4px;
+//     padding: 8px 16px;
+//     &::placeholder{
+//         font-family: 'Poppins';
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 21px;
+//         display: flex;
+//         align-items: center;
+//         color: #333333;
+//     }     
+//     &.sm {
+//         padding: 6px 16px;
+//         &::placeholder{
+//             font-family: 'Poppins';
+//             font-style: normal;
+//             font-weight: 300;
+//             font-size: 12px;
+//             line-height: 14px;
+//             display: flex;
+//             align-items: center;
+//             color: #333333;
+//         }
+//       }      
+//     &.md {
+//         padding: 7px 16px;
+//         &::placeholder{
+//             font-family: 'Poppins';
+//             font-style: normal;
+//             font-weight: 300;
+//             font-size: 14px;
+//             line-height: 18px;
+//             display: flex;
+//             align-items: center;
+//             color: #333333;
+//         }
+//     }
 
-}
-.error-message {
-    display: none;
-    color: #f44336;
+// }
+// .error-message {
+//     display: none;
+//     color: #f44336;
 
-    &.show {
-      display: block;
-    }
-  }
+//     &.show {
+//       display: block;
+//     }
+//   }
 
-  input:invalid + .error-message {
-    &.show {
-      display: block;
-    }
-  }
+//   input:invalid + .error-message {
+//     &.show {
+//       display: block;
+//     }
+//   }
